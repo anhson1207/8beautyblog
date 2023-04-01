@@ -1,0 +1,356 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header {
+  padding: 12px 0;
+  border-bottom: 1px solid #dedede;
+  color: #a3a3a3;
+  font-size: 13px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-left {
+  color: #a3a3a3;
+}
+.header-left i {
+  margin-right: 8px;
+}
+.header-left span {
+  position: relative;
+}
+.header-left span::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 17px;
+  background-color: #a3a3a3;
+  top: 0px;
+  right: -11px;
+}
+.header-right a {
+  text-decoration: none;
+}
+.header-right i {
+  color: #a3a3a3;
+  font-size: 14px;
+  margin-right: 15px;
+}
+.title {
+  padding: 60px 0;
+}
+.title h1 {
+  font-size: 28px;
+  color: #1c1c1c;
+  margin-left: 60px;
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid #ec0000;
+  border-bottom: 1px solid #dedede;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  padding: 16px 0;
+}
+.navbar__list a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+.navbar i {
+  padding: 16px 0;
+  cursor: pointer;
+  color: #1c1c1c;
+}
+.navbar__item {
+  position: relative;
+}
+.navbar__item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #ec0000;
+  top: 32px;
+  left: 7px;
+  transition: all linear 0.2s;
+}
+.navbar__item:hover::after {
+  width: 90%;
+}
+.navbar__item-active::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 3px;
+  background-color: #ec0000;
+  top: 32px;
+  left: 7px;
+}
+.navbar__item a.active {
+  color: #ef4444;
+}
+
+.product {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.container-product {
+  display: flex;
+  justify-content: space-between;
+}
+.product__img {
+  width: calc(100% / 3);
+  overflow: hidden;
+}
+.product__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: block;
+}
+.product__img img:hover {
+  transform: scale(1.2);
+}
+.product__desc {
+  margin-top: 40px;
+  width: calc(100% - 33.3333%);
+}
+.product__name {
+  color: #212529;
+  font-size: 48px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+.product__trademark,
+.product__type {
+  font-size: 20px;
+  color: #1c1c1c;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+.product__type a {
+  color: #007bff;
+  text-decoration: none;
+}
+.product__type a:hover {
+  color: #2470c2;
+  text-decoration: underline;
+}
+.product__price {
+  font-size: 16px;
+  color: #9e9e9e;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.product__buy {
+  margin-top: 30px;
+}
+.product__buy h4 {
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 300;
+}
+.product__button {
+  background-color: #ff9d85;
+  height: 40px;
+  padding: 8px 64px;
+  border: none;
+  color: #000;
+  min-width: 230px;
+  font-weight: 600;
+  margin: 8px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.product__button:hover {
+  background-color: #f08266;
+}
+.product__button img {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+  margin-right: 4px;
+}
+hr {
+  margin: 16px auto;
+  width: 50%;
+  color: #2eaded;
+  border: 1px solid #2eaded;
+}
+.title-text {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.characteristic {
+  margin-bottom: 60px;
+}
+.characteristic-content {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.characteristic-item {
+  display: flex;
+  width: calc(100% / 3);
+  padding: 27px;
+  cursor: pointer;
+}
+.characteristic-item span {
+  background-color: #7acdf6;
+  border-radius: 3px;
+  margin-right: 16px;
+}
+.characteristic-item i {
+  padding: 2px;
+  color: #fff;
+}
+.characteristic-item p {
+  position: relative;
+  top: 1px;
+  height: 20px;
+}
+.characteristic-item .span-minus {
+  background-color: #f73378;
+  border-radius: 3px;
+  margin-right: 16px;
+}
+.characteristic-item .minus-icon {
+  padding: 2px;
+  color: #fff;
+}
+.description {
+  margin-bottom: 60px;
+}
+.description p {
+  margin-bottom: 16px;
+  color: #9e9e9e;
+  font-weight: 400;
+  line-height: 24px;
+}
+.percentage {
+  margin: 30px 0 0;
+  display: flex;
+}
+.percentage-big {
+  width: 80%;
+  background-color: #2eaded;
+  height: 30px;
+}
+.percentage-small {
+  width: 20%;
+  background-color: #ff9d85;
+  height: 30px;
+}
+.ingredient-list {
+  margin-top: 60px;
+}
+.ingredient-item {
+  display: flex;
+  margin-bottom: 90px;
+}
+.ingredient-number {
+  width: 50px;
+  height: 50px;
+  background-color: #2eaded;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+.ingredient-number-2 {
+  background-color: #ff9d85;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+.ingredient-number-2 span {
+  color: #fff;
+  font-size: 24px;
+}
+.ingredient-number span {
+  color: #fff;
+  font-size: 24px;
+}
+.ingredient-info {
+  display: flex;
+  width: 50%;
+}
+.ingredient-info-name h4 {
+  color: #101010;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.ingredient-product span {
+  background-color: #bdbdbd;
+  color: #000;
+  padding: 12px;
+  border-radius: 22px;
+  font-weight: 600;
+  font-size: 12px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.ingredient-info-name {
+  padding: 0 15px;
+}
+.ingredient-desc p {
+  color: #828282;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.ingredient-desc button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 19px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+.ingredient-desc button:hover {
+  background-color: #065fbf;
+}
+.ingredient-item .other-name {
+  color: #4f4f4f;
+  margin: 24px 0 10px 0;
+}
+.ingredient-item li {
+  color: #4f4f4f;
+  margin-left: 40px;
+}
+.ingredient-desc {
+  width: 50%;
+}
